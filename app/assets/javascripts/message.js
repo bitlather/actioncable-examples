@@ -6,3 +6,8 @@ function sendMessage() {
 	var message = document.getElementById('message').value;
 	App.message.sendMessage(message);
 }
+
+function sendMessageFrom(domId) {
+	var message = document.getElementById(domId).textContent;
+	App.message.sendMessage(message);
+}

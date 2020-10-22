@@ -43,7 +43,8 @@ sync_data = {
 
 <h2>login_and_fetch_readers:</h2>
 <p>This is the actual cable you'd call.</p>
-<tt>
+<button onClick='sendMessageFrom("login_and_fetch_readers")'>Send message</button><br />
+<tt id="login_and_fetch_readers">
 <%= get_schwifty "integration#login_and_fetch_readers", login_data do %>
 
 Loading :D
@@ -53,7 +54,8 @@ Loading :D
 
 <h2>sync_readers:</h2>
 <p>This is the actual cable you'd call.</p>
-<tt>
+<button onClick='sendMessageFrom("sync_readers")'>Send message</button><br />
+<tt id="sync_readers">
 <%= get_schwifty "integration#sync_readers", sync_data do %>
 
 Loading :D
@@ -62,7 +64,8 @@ Loading :D
 </tt>
 
 <h2>sync_readers_success_no_earned_badges:</h2>
-<tt>
+<button onClick='sendMessageFrom("sync_readers_success_no_earned_badges")'>Send message</button><br />
+<tt id="sync_readers_success_no_earned_badges">
 <%= get_schwifty "integration#sync_readers_success_no_earned_badges", sync_data do %>
 
 Loading :D
@@ -75,7 +78,8 @@ Loading :D
 <font color="#aaa">
 
 <h2>login_fail:</h2>
-<tt>
+<button onClick='sendMessageFrom("login_fail")'>Send message</button><br />
+<tt id="login_fail">
 <%= get_schwifty "integration#login_fail", login_data do %>
 
 Loading :D
@@ -85,7 +89,8 @@ Loading :D
 
 
 <h2>login_reader_list_fail_name:</h2>
-<tt>
+<button onClick='sendMessageFrom("login_reader_list_fail_name")'>Send message</button><br />
+<tt id="login_reader_list_fail_name">
 <%= get_schwifty "integration#login_reader_list_fail_name", login_data do %>
 
 Loading :D
@@ -95,7 +100,8 @@ Loading :D
 
 
 <h2>sync_readers_fail_locked:</h2>
-<tt>
+<button onClick='sendMessageFrom("sync_readers_fail_locked")'>Send message</button><br />
+<tt id="sync_readers_fail_locked">
 <%= get_schwifty "integration#sync_readers_fail_locked", sync_data do %>
 
 Loading :D
