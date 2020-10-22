@@ -21,11 +21,19 @@ You must have redis installed and running on the default port:6379 (or configure
 
 ## Starting the servers
 
-1. Run `./bin/setup`
-2. Run `./bin/cable`
-3. Open up a separate terminal and run: `./bin/rails server`
-4. One more terminal to run redis server: `redis-server`
-4. Visit `http://localhost:3000`
+1. Run `sudo bundle install`
+2. Run `sudo ./bin/setup`
+3. Run `sudo ./bin/cable`
+4. Open up a separate terminal and run: `sudo ./bin/rails server`
+5. One more terminal to run redis server: `redis-server`
+6. Visit `http://localhost:3000/integration`
+
+### known issues
+if after visiting`http://localhost:3000/integration` you see this error:
+
+![Image](https://raw.githubusercontent.com/bitlather/actioncable-examples/875b8cb75276c12238730656938ca8b9d719e5ae/app/assets/images/image.png)
+
+Run `sudo bin/rails db:migrate RAILS_ENV=development`
 
 ## Live comments example
 

@@ -1,5 +1,6 @@
 #*DTA Here!
 Rails.application.routes.draw do
+  get 'message', to: 'message#index'
   resource  :session
   resources :examples
 
