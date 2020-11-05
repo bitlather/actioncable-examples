@@ -44,6 +44,6 @@ class MessageChannel < ApplicationCable::Channel
   end
 
   def channel_name
-    "messages:#{route}:#{params[:action]}:#{params[:user_id]}" #*DTA Could add a random value too if we desire
+    "messages:#{route}:user_id=#{params[:user_id]}:random_id=#{params[:random_id]}"
   end
 end
